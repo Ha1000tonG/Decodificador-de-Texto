@@ -1,27 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-@media screen and (min-width: 0){
-    body{
-        background-color: #b1e8f3;
+@media screen and (min-width: 0) {
+    body {
+        background-color: #F3F5FC;
         font-family: 'Inter', sans-serif;
     }
-    #logo{
-        padding-top: 24px;
-        height: 48px;
+
+    #logo {
+        padding-top: 20px;
+        padding-left: 30px;
+        height: 58px;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         /* width: 80%; */
     }
-    .section-text-area{
+
+    .section-text-area {
         display: flex;
         flex-direction: column;
     }
-    #texto{
+
+    #texto {
         /* topo | direita | inferior | esquerda */
-        margin: 50px 1rem 0 1rem;
+        margin: 40px 1rem 0 1rem;
         border: none;
         font-style: normal;
         font-size: 1rem;
@@ -29,41 +34,58 @@
         color: #0A3871;
         background: transparent;
         outline: 0;
+        background: #fffafa;
+        border-radius: 10px;
+        box-shadow: 40px 0px 40px 10px rgba(0, 0, 0, 0.50);
     }
-    #grupo-form{
+
+    #grupo-form {
         font-size: 0.7rem;
         margin: 1rem 0 10px 10px;
     }
-    .botao{
+
+    .botao {
         display: flex;
         flex-direction: column;
     }
-    #criptografar, #descriptografar{
-        border-radius: 1.5rem;
-        font-size: 1rem;
+
+    #btn-criptografar,
+    #btn-descriptografar {
+        border-radius: 8.5rem;
+        font-size: 1.5rem;
         padding: 1.5rem;
         /* vertical | horizontal */
         margin: 0 1rem;
         margin-bottom: 20px;
+        border: 0px;
+        box-shadow: 40px 0px 40px 10px rgba(13, 0, 0, 0.2);
     }
-    #criptografar{
-        color:white;
-        background-color:#0A3871;
+
+    #btn-criptografar {
+        color: white;
+        background-color: #0A3871;
     }
-    #descriptografar{
-        color:#0A3871;
-        background-color: #D8DFE8;
+
+    #btn-descriptografar {
+        color: #f3f6fa;
+        background-color: #bd5810;
     }
-    .crianca-lupa{
+
+    .lupa {
         display: none;
     }
-    .mensage-box{
+
+    .mensage-box {
         margin: 2rem 1rem 1.5rem 1rem;
         background-color: #fff;
         border-radius: 2rem;
+        background: #fffafa;
+        border-radius: 10px;
+        box-shadow: 40px 0px 40px 10px rgba(0, 0, 0, 0.50);
     }
-    #div-desaparece h2{
-        color:#343A40;
+
+    #div-desaparece h2 {
+        color: #343A40;
         font-size: 1.5rem;
         padding: 2rem 2rem 0 2rem;
         text-align: center;
@@ -72,15 +94,17 @@
         font-weight: 700;
         line-height: 120%;
     }
-    #div-desaparece h3{
+
+    #div-desaparece h3 {
         font-size: 1rem;
         line-height: 120%;
         font-weight: 400;
-        color:#495057;
+        color: #495057;
         padding: 1rem 2rem 2rem 2rem;
         text-align: center;
     }
-    .div-mensagem{
+
+    .div-mensagem {
         background-color: transparent;
         border: none;
         color: #0A3871;
@@ -96,47 +120,61 @@
         text-decoration: none;
         text-transform: lowercase;
         width: 80%;
-    } 
-    .btn-copiar{
-        background-color: #fff;
+        background: #fffafa;
+        border-radius: 10px;
+        box-shadow: 40px 0px 40px 10px rgba(0, 0, 0, 0.0);
+    }
+
+    .btn-copiar {
+        background-color: #035061;
         border-radius: 24px;
-        color:#0A3871;
+        border: 0px;
+        color: #f7f8f9;
         display: block;
         font-size: 16px;
         margin: 30px auto;
         padding: 1rem 20%;
         text-align: center;
 
-    } 
-    #tela-texto-copiado{
-        background-color: rgba(0,0,0,0.5);
+    }
+
+    #tela-texto-copiado {
+        background-color: rgba(0, 0, 0, 0.5);
         display: none;
         height: 100%;
         left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    #tela-texto-copiado div{
-        background-color: rgba(247, 246, 246, 0.4);
-        padding: 20px 0;
+        width: auto;
         position: absolute;
-        top: 30%;
-        left: auto;
+        top: 0%;
         width: 100%;
     }
-    #tela-texto-copiado h2{
+
+    #tela-texto-copiado div {
+        background-color: rgba(247, 247, 246, 0.4);
+        border-radius: 300px;
+        box-shadow: 40px 0px 40px 10px rgba(4, 23, 27, 0.9);
+        padding: 20px 0;
+        position: fixed;
+        top: 30%;
+        left: 12%;
+        /*width: 100%;*/
+
+    }
+
+    #tela-texto-copiado h2 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color:#0A3871;
+        color: #022a42;
         padding: 1.5rem;
         text-align: center;
         font-size: 1.5rem;
         text-transform: lowercase;
     }
-    #tela-texto-copiado button{
-        background-color: #D8DFE8;
+
+    #tela-texto-copiado button {
+        background-color: #035061;
         border-radius: 20px;
-        color:#0A3871;
+        border: 0px;
+        color: #fffffe;
         display: flex;
         justify-content: center;
         margin-left: auto;
@@ -148,63 +186,83 @@
         transition: all ease 500ms;
         width: 60%;
     }
-    #tela-texto-copiado button:hover{
+
+    #tela-texto-copiado button:hover {
         transform: scale(1.05);
-        background-color: rgba(255,255,255,0.3);
-    }  
+        background-color: rgba(42, 124, 122, 0.3);
+    }
 }
 
-@media screen and (min-width: 768px){
-   #logo{
-        padding-top: 73px;
-        height: 48px;
-        padding-left: 40px;
-   }
-   .container{
+@media screen and (min-width: 768px) {
+    #logo {
+        padding-top: 63px;
+        height: 58px;
+        padding-left: 80px;
+    }
+
+    .container {
         padding: 0 40px;
     }
-    #texto{
+
+    #texto {
         padding: 0 20px;
         font-size: 1.25rem;
         height: 350px;
     }
-    .botao{
+
+    .botao {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #criptografar, #descriptografar{
+
+    #btn-criptografar,
+    #btn-descriptografar {
         font-size: 1.25rem;
         margin: 0.5rem 1rem;
         margin-bottom: 0;
         width: 450px;
         padding: 1rem;
     }
-    .btn-copiar{
-        padding: 1rem 30%;
-    } 
-}
-@media screen and (min-width: 1400px){ 
-    .container{
-        flex-direction: row;
-        padding: 0 100px;
-        height: 600px;
-    }
-    .crianca-lupa{
-        display: block;
-    }
-    #div-desaparece{
-        position: relative;
-        top: 100px;
-    }
-    .mensage-box{
-        margin-left: 80px;
-        position: relative;
-        top: -100px;
-        height: 750px;
-        width: 350px;
-    }
-    .div-mensagem{
-        height: 600px;
-    } 
 
-} 
+    .btn-copiar {
+        padding: 1rem 30%;
+    }
+
+    #tela-texto-copiado div {
+        background-color: rgba(247, 247, 246, 0.4);
+        padding: 20px 0;
+        position: fixed;
+        top: 30%;
+        left: 30%;
+        width: 40%;
+    }
+
+    @media screen and (min-width: 1400px) {
+        .container {
+            flex-direction: row;
+            padding: 0 100px;
+            height: 600px;
+        }
+
+        .lupa {
+            display: block;
+        }
+
+        #div-desaparece {
+            position: relative;
+            top: 100px;
+        }
+
+        .mensage-box {
+            margin-left: 80px;
+            position: relative;
+            top: -100px;
+            height: 750px;
+            width: 350px;
+        }
+
+        .div-mensagem {
+            height: 600px;
+        }
+
+    }

@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador</title>
+    <title>Codificador de Texto</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resert.css">
 </head>
+
 <body>
     <header class="cabecalho">
-        <img src="images/logo.png" onclick="home()" alt="logomarca" id="logo">
+        <img id="logo" src="img/h.png" onclick="home()" alt="logomarca">
     </header>
     <main class="container">
         <section class="section-text-area">
-            <textarea name="texto" id="texto" placeholder="Digite seu texto" cols="30" rows="10"></textarea>
+            <textarea id="texto" name="texto" autofocus placeholder="Digite seu texto!" cols="30" rows="10"
+                errorMsg="O campo MENSAGEM deve ser preenchido!"></textarea>
             <div id="grupo-form">
-                <img src="images/!.png" alt="exclamacao">
+                <img src="img/atencao.png" alt="exclamacao">
                 Apenas letras minusculas e sem acento.
             </div>
             <div class="botao">
-                <button id="criptografar">Criptografar</button>
-                <button id="descriptografar">Descriptografar</button>
+                <button id="btn-criptografar">Criptografar</button>
+                <button id="btn-descriptografar">Descriptografar</button>
             </div>
-                
+
         </section>
         <section class="mensage-box">
             <div id="div-desaparece" class="message-box-div">
-                <img class="crianca-lupa" src="images/mensaje.svg"> 
+                <img class="lupa" src="img/aa.png">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
-            </div> 
+            </div>
             <div id="div-aparece">
-                <textarea class="div-mensagem" disabled type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
-                <input class="btn-copiar" type="submit" value="copiar" id="btn-copiar">
-                
+                <textarea id="mensagem" class="div-mensagem" disabled type="text"
+                    placeholder="Nenhum texto foi digitado!"></textarea>
+                <input id="btn-copiar" class="btn-copiar" type="submit" value="copiar">
+
             </div>
         </section>
     </main>
@@ -48,4 +52,5 @@
     </aside>
     <script src="script.js"></script>
 </body>
+
 </html>

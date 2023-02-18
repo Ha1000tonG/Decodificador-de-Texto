@@ -1,13 +1,12 @@
 //Seletores
 const input = document.querySelector("#texto");
-const btnCriptografar = document.querySelector("#criptografar");
-const btnDescriptografar = document.querySelector("#descriptografar");
+const btnCriptografar = document.querySelector("#btn-criptografar");
+const btnDescriptografar = document.querySelector("#btn-descriptografar");
 const mensagem = document.querySelector("#mensagem");
 const btnCopiar = document.querySelector("#btn-copiar");
 const btnOk = document.querySelector('#ok')
 
-
-document.getElementById('ok').onclick = (e) =>{
+document.getElementById('ok').onclick = (e) => {
   document.getElementById("tela-texto-copiado").style.display = 'none';
 }
 
@@ -16,7 +15,7 @@ document.getElementById("div-aparece").style.display = 'none';
 inputverificar();
 
 // caputura o id no momento do click e direciona para o metódo que encripta o texto
-document.getElementById('criptografar').onclick = (e) => {
+document.getElementById('btn-criptografar').onclick = (e) => {
   e.preventDefault();
   const textoEncriptado = encriptar(input.value.toLowerCase());
   mensagem.value = textoEncriptado;
@@ -25,7 +24,7 @@ document.getElementById('criptografar').onclick = (e) => {
 }
 
 // caputura o id no momento do click e direciona para o metódo que desencripta o texto
-document.getElementById('descriptografar').onclick = (e) => {
+document.getElementById('btn-descriptografar').onclick = (e) => {
   e.preventDefault();
   const textoDecriptado = decodificar(input.value);
   mensagem.value = textoDecriptado;
@@ -45,7 +44,13 @@ document.getElementById('btn-copiar').onclick = (e) => {
 
 //encripta o texto
 function encriptar(stringEncriptada) {
-  let matrixCode = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+  let matrixCode = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"]
+  ]
   stringEncriptada = stringEncriptada.toLowerCase()
   for (let i = 0; i < matrixCode.length; i++) {
     if (stringEncriptada.includes(matrixCode[i][0])) {
@@ -57,7 +62,13 @@ function encriptar(stringEncriptada) {
 
 //decodifica o texto
 function decodificar(stringDecriptada) {
-  let matrixCode = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+  let matrixCode = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"]
+  ]
   stringDecriptada = stringDecriptada.toLowerCase()
   for (let i = 0; i < matrixCode.length; i++) {
     if (stringDecriptada.includes(matrixCode[i][1])) {
@@ -72,12 +83,13 @@ function aparece() {
   document.getElementById("div-desaparece").style.display = 'none';
   document.getElementById("div-aparece").style.display = 'block';
 }
+
 function desaparece() {
   document.getElementById("tela-texto-copiado").style.display = 'block';
   document.getElementById("div-desaparece").style.display = 'block';
   document.getElementById("div-aparece").style.display = 'none';
 }
-//manipula o dom para que alguns componentes apareçam e desapareçam da tela
+
 function home() {
   document.getElementById("div-aparece").style.display = 'none';
   document.getElementById("div-desaparece").style.display = 'block';
@@ -95,4 +107,3 @@ function inputverificar() {
     }
   });
 }
-
