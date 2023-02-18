@@ -9,4 +9,6 @@
 
 
 ##### :hammer: Modelo inicial disponibilizado no Figma:
-- `Link do modelo` : https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802
+- `Link do modelo:` https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802
+
+- `Projeto concluido:` https://ha1000tong.github.io/Codificador-Alura-Oracle/
