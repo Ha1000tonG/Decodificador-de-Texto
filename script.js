@@ -6,42 +6,6 @@ const mensagem = document.querySelector("#mensagem");
 const btnCopiar = document.querySelector("#btn-copiar");
 const btnOk = document.querySelector('#ok')
 
-document.getElementById('ok').onclick = (e) => {
-  document.getElementById("tela-texto-copiado").style.display = 'none';
-}
-
-//captura o id e esconde a div-aparece da tela
-document.getElementById("div-aparece").style.display = 'none';
-inputverificar();
-
-// caputura o id no momento do click e direciona para o metódo que encripta o texto
-document.getElementById('btn-criptografar').onclick = (e) => {
-  e.preventDefault();
-  const textoEncriptado = encriptar(input.value.toLowerCase());
-  mensagem.value = textoEncriptado;
-  input.value = "";
-  aparece()
-}
-
-// caputura o id no momento do click e direciona para o metódo que desencripta o texto
-document.getElementById('btn-descriptografar').onclick = (e) => {
-  e.preventDefault();
-  const textoDecriptado = decodificar(input.value);
-  mensagem.value = textoDecriptado;
-  input.value = "";
-  aparece()
-}
-
-// caputura o id no momento do click e faz a validação de copiar o texto
-document.getElementById('btn-copiar').onclick = (e) => {
-  e.preventDefault();
-  const mensagem = document.querySelector("#mensagem");
-  mensagem.select();
-  navigator.clipboard.writeText(mensagem.value)
-  mensagem.value = "";
-  desaparece();
-}
-
 //encripta o texto
 function encriptar(stringEncriptada) {
   let matrixCode = [
@@ -95,7 +59,6 @@ function home() {
   document.getElementById("div-desaparece").style.display = 'block';
 }
 
-
 //verifica qual foi o texto digitado pelo usuário
 function inputverificar() {
   var inputPalavra = document.querySelector("#texto");
@@ -106,4 +69,42 @@ function inputverificar() {
       e.preventDefault();
     }
   });
+}
+
+
+
+document.getElementById('ok').onclick = (e) => {
+  document.getElementById("tela-texto-copiado").style.display = 'none';
+}
+
+//captura o id e esconde a div-aparece da tela
+document.getElementById("div-aparece").style.display = 'none';
+inputverificar();
+
+// caputura o id no momento do click e direciona para o metódo que encripta o texto
+document.getElementById('btn-criptografar').onclick = (e) => {
+  e.preventDefault();
+  const textoEncriptado = encriptar(input.value.toLowerCase());
+  mensagem.value = textoEncriptado;
+  input.value = "";
+  aparece()
+}
+
+// caputura o id no momento do click e direciona para o metódo que desencripta o texto
+document.getElementById('btn-descriptografar').onclick = (e) => {
+  e.preventDefault();
+  const textoDecriptado = decodificar(input.value);
+  mensagem.value = textoDecriptado;
+  input.value = "";
+  aparece()
+}
+
+// caputura o id no momento do click e faz a validação de copiar o texto
+document.getElementById('btn-copiar').onclick = (e) => {
+  e.preventDefault();
+  const mensagem = document.querySelector("#mensagem");
+  mensagem.select();
+  navigator.clipboard.writeText(mensagem.value)
+  mensagem.value = "";
+  desaparece();
 }
