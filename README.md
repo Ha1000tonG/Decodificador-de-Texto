@@ -1,4 +1,4 @@
-  <h3 align="center"> Challenge ONE - Construa um decodificador de texto </h3>
+  <h3 align="center"> Challenge ONE - Construa um decodificador de texto! </h3>
 
   <h3 align="center">Curso: ONE-Oracle Next Education - Alura: https://www.alura.com.br/ </h3>
  
@@ -9,9 +9,9 @@
 <h3 align="center"> <img src="https://img.shields.io/badge/-Figma-05122A?style=flat&logo=figma&logoColor=007ACC"/> <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC"/> <img src="https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello&logoColor=007ACC"/></h3>
 
 
-##### :hammer: Modelo inicial disponibilizado no Figma:
-- `Link do modelo base no Figma:` https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802
+##### :hammer: Links para visualização do projeto:
+- `:dart: Link do modelo inicial no Figma:` https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802
 
-- `Projeto concluido:` https://ha1000tong.github.io/Codificador-Alura-Oracle/
+- ` :star: Projeto concluido:` https://ha1000tong.github.io/Codificador-Alura-Oracle/
 
-- `Link do modelo no Figma:` https://www.figma.com/file/RYONldMtUCyxGElXcLC4yp/NavBarResponsivo?t=xLNQ9mDn5Bsw8HQi-6
+- ` :pushpin: Link do modelo no Figma:` https://www.figma.com/file/RYONldMtUCyxGElXcLC4yp/NavBarResponsivo?t=xLNQ9mDn5Bsw8HQi-6
