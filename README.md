@@ -10,8 +10,8 @@
 
 
 ##### :hammer: Links para visualização do projeto:
-- [:dart: `Modelo inicial no Figma:`] (https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802)
+:dart: [`Modelo inicial no Figma:`] (https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802)
 
-- :star: `Projeto concluido:` https://ha1000tong.github.io/Codificador-Alura-Oracle/
+:star: `Projeto concluido:` https://ha1000tong.github.io/Codificador-Alura-Oracle/
 
-- :pushpin: `Modelo final no Figma:` https://www.figma.com/file/RYONldMtUCyxGElXcLC4yp/NavBarResponsivo?t=xLNQ9mDn5Bsw8HQi-6
+:pushpin: `Modelo final no Figma:` https://www.figma.com/file/RYONldMtUCyxGElXcLC4yp/NavBarResponsivo?t=xLNQ9mDn5Bsw8HQi-6
