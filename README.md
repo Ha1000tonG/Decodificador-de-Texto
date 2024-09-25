@@ -1,12 +1,15 @@
   <h3 align="center"> Challenge ONE - Decodificador de Texto! </h3>
 
+<div align="center"> <img src= "https://github.com/user-attachments/assets/449c6b0b-9a99-4997-83d0-df50519cfd06" width="400" height="200"/></div>   
+
 #
 Este projeto foi desenvolvido como parte do curso (ONE-Oracle Next Education) da [Alura](https://www.alura.com.br/), cujo objetivo é construir um decodificador de texto que permite a codificação e decodificação de mensagens. 
 
 #
-* **Objetivo do Projeto:**
-    *  O decodificador de texto foi criado para praticar lógica de programação, manipulação de strings e operações básicas em um ambiente web.
-    *  A aplicação permite a codificação de mensagens simples, transformando o texto original em um formato codificado, e a decodificação, revertendo o processo.
+**Objetivo do Projeto:**  
+
+O decodificador de texto foi criado para praticar lógica de programação, manipulação de strings e operações básicas em um ambiente web.  
+A aplicação permite a codificação de mensagens simples, transformando o texto original em um formato codificado, e a decodificação, revertendo o processo.
 
 #
 * **Funcionalidades:**
